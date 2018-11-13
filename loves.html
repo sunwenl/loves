@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>swl-之家</title>
+  <link rel="stylesheet" href="">
+  <style type="text/css" media="screen">
+		*{margin:0px;padding: 0px;}
+		.clearfix:after{
+			content: "";clear: both;display: block;overflow: hidden;height: 0px;
+		}
+
+		.container{
+			width: 99.5%;height: 600px;
+			background: url(./src/main/resources/static/images/hougong.jpg);
+			border:5px solid red;
+			border-radius: 10px;
+			/*景深加在哪个元素上，相当于眼睛在该元素的中间的正前方*/
+			perspective: 800px;
+		}
+		.container>h1{
+			text-align: center;
+			color:red;
+		}
+
+        .container>ul{
+        	width: 850px;
+        	margin: 100px auto;
+        }
+		.container>ul>li{
+			width: 121px;height: 221px;
+			float: left;
+			margin:0px 10px;
+			list-style: none;
+			position: relative;
+
+			transform-style: preserve-3d;
+			transition: all 1s;
+		}
+		.container>ul>li:hover{
+			transform: rotateY(180deg);
+		}
+        /*前*/
+		.face1{
+			background: url(./src/main/resources/static/images/hougong1.jpg);
+			width: 81px;height: 201px;
+            position: absolute;
+            top:50%;left:50%;
+            margin-left: -40.5px;
+            margin-top: -100.5px;
+            transform: translateZ(15px);
+            border-radius: 5px;
+		}
+		/*后*/
+		.face2{
+			background:url(./src/main/resources/static/images/hougong1.jpg);
+			width: 81px;height: 201px;
+			position: absolute;
+            top:50%;left:50%;
+            margin-left: -40.5px;
+            margin-top: -100.5px;
+            transform: translateZ(-15px);
+            border-radius: 5px;
+		}
+		/*左*/
+		.face3{
+			background:url(./src/main/resources/static/images/boot.jpg);
+			width: 30px;height: 201px;
+			position: absolute;
+			top:50%;left:50%;
+			margin-left: -15px;margin-top: -100.5px;
+			transform: rotateY(-90deg) translateZ(40.5px);
+			border-radius: 5px;
+		}
+
+		/*右*/
+		.face4{
+			background:url(./src/main/resources/static/images/boot.jpg);
+			width: 30px;height: 201px;
+			position: absolute;
+			top:50%;left:50%;
+			margin-left: -15px;margin-top: -100.5px;
+			transform:rotateY(90deg) translateZ(40.5px);
+			border-radius: 5px;
+		}
+
+	    .container>ul>li:nth-child(2)>.face1,.container>ul>li:nth-child(2)>.face2{
+          background-image: url(./src/main/resources/static/images/hongong2.jpg);
+	    }
+
+	    .container>ul>li:nth-child(3)>.face1,.container>ul>li:nth-child(3)>.face2{
+          background-image: url(./src/main/resources/static/images/hongong3.jpg);
+	    }
+
+	    .container>ul>li:nth-child(4)>.face1,.container>ul>li:nth-child(4)>.face2{
+          background-image: url(./src/main/resources/static/images/hongong4.jpg);
+	    }
+
+	    .container>ul>li:nth-child(5)>.face1,.container>ul>li:nth-child(5)>.face2{
+          background-image: url(./src/main/resources/static/images/hongong5.jpg);
+	    }
+
+	    .container>ul>li:nth-child(6)>.face1,.container>ul>li:nth-child(6)>.face2{
+          background-image: url(./src/main/resources/static/images/hongong788.jpg);
+	    }
+
+	</style>
+</head>
+<body>
+<div class="container">
+  <h1>皇上请翻牌</h1>
+  <ul class="clearfix">
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+
+    <li>
+      <div class="face1"></div>
+      <div class="face2"></div>
+      <div class="face3"></div>
+      <div class="face4"></div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
