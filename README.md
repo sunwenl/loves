@@ -1,4 +1,4 @@
-# love --> 学习系列
+#学习系列
 
 ## io包
  * io 简单学习 
@@ -9,12 +9,12 @@
 ## 设计模式学习系列篇：
 
 ### 六大设计原则(SOLID)
- * [单一职责原则(SRP)](/designModel/sixPrinciples/srp)
- * [开闭原则(OCP)](/designModel/sixPrinciples/ocp)
- * [里氏替换原则(LSP)](/designModel/sixPrinciples/lsp)
- * [迪米特法则(LOD)](/designModel/sixPrinciples/lod)
- * [接口隔离原则(ISP)](/designModel/sixPrinciples/isp)
- * [依赖倒置原则(DIP)](/designModel/sixPrinciples/dip)  
+ * 单一职责原则(SRP) (/designModel/sixPrinciples/srp)
+ * 开闭原则(OCP) (/designModel/sixPrinciples/ocp)
+ * 里氏替换原则(LSP) (/designModel/sixPrinciples/lsp)
+ * 迪米特法则(LOD) (/designModel/sixPrinciples/lod)
+ * 接口隔离原则(ISP) (/designModel/sixPrinciples/isp)
+ * 依赖倒置原则(DIP) (/designModel/sixPrinciples/dip)  
  
 ### 创建型模式
  * 单例模式、工厂模式、抽象工厂模式、生成器模式、原型模式
