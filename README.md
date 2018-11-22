@@ -7,22 +7,22 @@
  * hashmaps hashmap简单学习
  * aop aop简单学习
  * shejimoshi简单学习
-#### 设计模式学习系列篇：
-##### 六大设计原则(SOLID)
+### 设计模式学习系列篇：
+#### 六大设计原则(SOLID)
  * [单一职责原则(SRP)](/shejimoshi/sixPrinciples/srp)
  * [开闭原则(OCP)](/shejimoshi/sixPrinciples/ocp)
  * [里氏替换原则(LSP)](/shejimoshi/sixPrinciples/lsp)
  * [迪米特法则(LOD)](/shejimoshi/sixPrinciples/lod)
  * [接口隔离原则(ISP)](/shejimoshi/sixPrinciples/isp)
  * [依赖倒置原则(DIP)](/shejimoshi/sixPrinciples/dip)  
-##### 创建型模式
+#### 创建型模式
  * 单例模式、工厂模式、抽象工厂模式、生成器模式、原型模式
     * 单例模式(Singleton Pattern):保证一个类仅有一个实例，并提供一个访问它的全局访问点。例：跨窗体访问同一个实例。
     * 工厂模式(Factory Pattern):根据提供给工厂的数据，从一系列相关的类中选择一个类实例并返回。例:Oracle,SQL Server 访问类的选择
     * 抽象工厂模式(Abstract Factory Pattern):为一组类返回一个工厂。
     * 生成器模式(Builder Pattern):根据提供给他的数据及表示，组装成新的对象。 例：根据用户不同的选择显示不同控件。
     * 原型模式(Prototype Pattern):由结果到一个新的结果。例：根据由执行的SQL 查询结果得到另一个结果。与生成器类似工厂，两者都返回由许多方法的对象组成的类。差别:抽象工厂返回一系列相关的类。生成器是根据提供给它的数据一步一步地构建一个复杂的对象。
-##### 结构型模式
+#### 结构型模式
  * 适配器模式、桥接模式、组成模式、装饰模式、外观模式、享元模式、代理模式。
     * 适配器模式(Adapter Pattern):将一个类将一种接口转换成另一种接口。
     * 桥接模式(Bridge Pattern):类的接口和它的实现相分离，无需改变调用者的代码即可替代实现的过程。
@@ -31,7 +31,7 @@
     * 外观模式(Facde Pattern):可以将一系统复杂的类包装成一个简单的封闭接口。
     * 享元模式(Flyweight Pattern):通过共享（把参数移动外部）大幅地减少单个实例的数目。
     * 代理模式(Proxy Pattern):为一个复杂的对象提供一个简单的占位对象。
-##### 行为型模式
+#### 行为型模式
  * 中介者模式、命令模式、备忘录模式、状态模式、策略模式、解释器模式、迭代器模式、观察者模式、访问者模式、模板方法模式。
     * 中介者模式(Mediator Pattern):中介者做为唯一了解其它类的一个,简化了通信.促进类之音的松散便于修改维护。
       每个和中介者通信的控件都称为同事。
