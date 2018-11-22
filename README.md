@@ -1,20 +1,19 @@
-# loves
-创建gitPage个人博客
+# 学习系列
 
-## 学习
-### io包
- * io 学习 
- * hashmaps hashmap简单学习
- * aop aop简单学习
- * shejimoshi简单学习
-### 设计模式学习系列篇：
+## io包
+ * io 简单学习 
+ * hashMap 简单学习
+ * aop 简单学习
+ * designModel 简单学习
+ 
+## 设计模式学习系列篇：
 ### 六大设计原则(SOLID)
- * [单一职责原则(SRP)](/shejimoshi/sixPrinciples/srp)
- * [开闭原则(OCP)](/shejimoshi/sixPrinciples/ocp)
- * [里氏替换原则(LSP)](/shejimoshi/sixPrinciples/lsp)
- * [迪米特法则(LOD)](/shejimoshi/sixPrinciples/lod)
- * [接口隔离原则(ISP)](/shejimoshi/sixPrinciples/isp)
- * [依赖倒置原则(DIP)](/shejimoshi/sixPrinciples/dip)  
+ * [单一职责原则(SRP)](/designModel/sixPrinciples/srp)
+ * [开闭原则(OCP)](/designModel/sixPrinciples/ocp)
+ * [里氏替换原则(LSP)](/designModel/sixPrinciples/lsp)
+ * [迪米特法则(LOD)](/designModel/sixPrinciples/lod)
+ * [接口隔离原则(ISP)](/designModel/sixPrinciples/isp)
+ * [依赖倒置原则(DIP)](/designModel/sixPrinciples/dip)  
 ### 创建型模式
  * 单例模式、工厂模式、抽象工厂模式、生成器模式、原型模式
     * 单例模式(Singleton Pattern):保证一个类仅有一个实例，并提供一个访问它的全局访问点。例：跨窗体访问同一个实例。
