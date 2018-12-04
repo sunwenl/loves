@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--从容器中取回的对象默认是单例的:-->
+    <!--可以通过使用scope属性指定作用域-->
+    <!--singleton (默认的)每个String Ioc容器作用域中一个bean定义只对应一个对象实例。-->
+    <!--prototype 一个bean定义对应多个对象实例。-->
+    <!--request 一个bean定义作用与HTTP request生命周期；是指每个HTTP request拥有自己的通过一个bean定义创建的实例。-->
+            <!--仅在基于web的Spring ApplicationContext中有效。-->
+    <!--global 一个bean定义作用与全局的HTTP session生命周期。仅在portlet context中使用才有效。-->
+           <!--仅在基于web的Spring ApplicationContext中有效。-->
+    <!--session session会话-->
+    <!--application 一个bean定义作用于整个ServletContext生命周期，仅在基于web的Spring ApplicationContext中有效。-->
+
+    <!--使用有参构造方法创建对象-->
+    <bean id="tom" class="com.loves.ioc.version002.Student" scope="prototype">
+        <constructor-arg name="name" value="黄黄黄黄"></constructor-arg>
+        <constructor-arg name="age" value="195"></constructor-arg>
+    </bean>
+
+    <!--如果在使用构造方法时不想通过参数名称指定参数则可以直接使用索引，如：-->
+    <!--<bean id="tom" class="com.loves.ioc.version002.Student">-->
+        <!--<constructor-arg  index="0" value="黄黄黄黄"></constructor-arg>-->
+        <!--<constructor-arg  index="1" value="195"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!--通过属性赋值-->
+    <!--<bean id="tom" class="com.loves.ioc.version002.Student">-->
+        <!--<property name="age" value="123"/>-->
+        <!--<property name="name" value="黄苒苒苒"/>-->
+    <!--</bean>-->
+
+
+</beans>
