@@ -63,3 +63,8 @@
       1.链的组织是从最特珠的到最一般的。
       2.不能保证在任何情况下都会有响应。
       职责链用于分析器与编译器。
+      
+## 微信企业自动转账到个人：
+ * see -> com.loves.weixin
+ * 参考：https://blog.csdn.net/github_38924695/article/details/78850704
+    
