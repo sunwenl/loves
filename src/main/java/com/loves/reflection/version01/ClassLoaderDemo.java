@@ -19,7 +19,7 @@ public class ClassLoaderDemo {
         //Class<?> claz = Class.forName("java.util.Date");
         //System.out.println(claz.newInstance());
 
-        MyClassLoader myClassLoader = new MyClassLoader();
+        MyClassLoader myClassLoader = new MyClassLoader();//com.loves.reflection.version01
         Class<?> cls = myClassLoader.loadFiles(" com.loves.reflection.version01.Student");
         System.out.println(cls.newInstance());
 
