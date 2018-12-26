@@ -16,6 +16,8 @@ public class FileLearn {
          System.out.println("文件大小:" + file.length());
 
 
+        File file2 = new File(" /Users/sunwenlong/Downloads/Student.class");
+        System.out.println("是文件吗:" + file2.isFile());
          //******************FileInputStream 的使用******************
         //创建文件对象
         File files = new File("/Users/sunwenlong/Downloads/settings.xml");
