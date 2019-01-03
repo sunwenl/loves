@@ -1,5 +1,8 @@
 package com.loves.designModel.behaviorModel.chainOfResponsibility;
 
+import com.loves.designModel.behaviorModel.chainOfResponsibility.Approve;
+import com.loves.designModel.behaviorModel.chainOfResponsibility.PurchaseRequest;
+
 /**
  * 副总审批
  */

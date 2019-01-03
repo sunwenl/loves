@@ -1,8 +1,8 @@
 package com.loves.designModel.behaviorModel;
 
 /**
- * @Author ：SunWenLong
- * @Date ：2018/11/22
+ * @Author ：xiaoyijia
+ * @Date ：2018/12/21
  */
 public class Test {
 }
