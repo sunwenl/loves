@@ -6,6 +6,8 @@ import java.util.List;
 /**
  * @Author ：SunWenLong
  * @Date ：2019/1/3
+ *
+ * 多线程  分发信息
  */
 public class BatchThread {
 
