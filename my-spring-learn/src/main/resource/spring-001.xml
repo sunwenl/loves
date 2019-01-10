@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--默认单利模式-->
+    <!--<bean id="user0" class="com.spring.learn.bean.User" />-->
+    <!--&lt;!&ndash;开启原型模式&ndash;&gt;-->
+    <!--<bean id="user" class="com.spring.learn.bean.User" scope="prototype"/>-->
+
+    <!--&lt;!&ndash;调用有参构造函数&ndash;&gt;-->
+    <!--<bean id="user1" class="com.spring.learn.bean.User">-->
+        <!--<constructor-arg name="id" value="1"></constructor-arg>-->
+        <!--<constructor-arg name="name" value="事实上"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!-- 通过实例工厂方法创建 -->
+    <bean id="factory" class="com.spring.learn.factory.ObjectFactory"></bean>
+    <!--通过实例工厂方法创建-->
+    <bean id ="user2" factory-bean="factory" factory-method="getUser"></bean>
+
+    <!-- 通过静态工厂方法创建 -->
+    <bean id="user3" class="com.spring.learn.factory.ObjectFactory" factory-method="getStaticUser"></bean>
+</beans>

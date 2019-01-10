@@ -6,6 +6,9 @@
 	<groupId>com.loves</groupId>
 	<artifactId>loves</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>my-spring-learn</module>
+    </modules>
     <packaging>pom</packaging>
 
 	<name>loves</name>
