@@ -1,6 +1,7 @@
 package com.spring.learn.mySpring;
 
 import com.spring.learn.bean.User;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @Author ：SunWenLong
@@ -11,17 +12,17 @@ public class Test {
     /**
      * spring 自己实现
      */
-    //public static void main(String[] args) {
-    //    ClassPathXmlApplicationContext clazz = new ClassPathXmlApplicationContext("/spring-006.xml");
-    //    User user = (User)clazz.getBean("user1");
-    //    System.out.println(user.toString());
-    //}
-
-    //手写spring bean xml实现
     public static void main(String[] args) throws  Exception{
-        MyClassPathXmlApplicationContext myClazz = new MyClassPathXmlApplicationContext("spring-006.xml");
-        User user = (User)myClazz.getBean("user1");
+        ClassPathXmlApplicationContext clazz = new ClassPathXmlApplicationContext("/spring-006.xml");
+        User user = (User)clazz.getBean("user1");
         System.out.println(user.toString());
     }
+
+    //手写spring bean xml实现
+    //public static void main(String[] args) throws  Exception{
+    //    MyClassPathXmlApplicationContext2 myClazz = new MyClassPathXmlApplicationContext2("spring-006.xml");
+    //    User user = (User)myClazz.getBean("user2");
+    //    System.out.println(user.toString());
+    //}
 
 }
